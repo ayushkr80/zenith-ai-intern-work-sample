@@ -1,83 +1,48 @@
 # StylePilot — AI Fashion Recommendation POC
 
-An independent AI-powered fashion recommendation proof-of-concept created as a work sample for the **Zenith / J.E.R.K. AI Internship** assignment.
+An independent fashion recommendation proof-of-concept developed as a work sample for the **Zenith / J.E.R.K. AI Internship assignment**.
 
-StylePilot explores how **personal colour intelligence, user preferences, occasion, climate, and budget** can be combined to generate more relevant fashion recommendations.
+StylePilot demonstrates how user context such as **colour profile, occasion, climate, style direction, and budget** can be combined to generate a more relevant fashion recommendation.
+
+> **Note:** This is an independent proof-of-concept. It does not reproduce, access, or claim to use proprietary Zenith/J.E.R.K. models, datasets, algorithms, or internal architecture.
 
 ---
 
 ## 🎯 What This Project Demonstrates
 
-- **Context-aware fashion recommendations**
-- **Colour-profile-aware outfit palettes**
-- **Occasion and climate-based adaptation**
-- **Budget-aware recommendations**
-- **Preference-aware styling**
-- **Structured user feedback for future personalization**
+- Context-aware fashion recommendations
+- Colour-profile-aware outfit palettes
+- Occasion-based styling
+- Climate-aware fabric selection
+- Budget-aware recommendation positioning
+- Structured user feedback
+- A foundation for future personalized recommendation systems
 
 ---
 
 ## 🧠 Recommendation Approach
 
-The prototype combines multiple user signals instead of relying only on generic fashion recommendations.
+The prototype uses a transparent recommendation layer that combines multiple user inputs.
 
-**User Profile**
+### User Inputs
 
-→ Colour profile  
-→ Style preferences  
-→ Occasion  
-→ Climate  
-→ Budget  
-→ Comfort requirements  
-
-**↓**
-
-**Recommendation Logic**
-
-**↓**
-
-**Personalized Fashion Suggestions**
-
-The design is intended to provide a foundation for a future recommendation system that can learn from user feedback and interaction history.
-
----
-
-## ✨ Key Features
-
-### 1. Personalization
-Recommendations can adapt to individual preferences such as preferred colours, fit, comfort, and existing wardrobe choices.
-
-### 2. Colour Intelligence
-Colour-profile information can be used to guide suitable clothing palettes and reduce generic recommendations.
-
-### 3. Context Awareness
-Recommendations can change depending on:
-
-- Occasion
-- Weather / climate
-- Comfort requirements
-- Budget
-- User preferences
-
-### 4. Feedback Loop
-User feedback can be captured in a structured format, creating a foundation for future personalization and recommendation improvement.
-
----
-
-## 🛠️ Tech Stack
-
-- **Python**
-- **Streamlit**
-- **Pandas**
-- **Rule-based recommendation logic**
-- **AI/ML-oriented recommendation architecture**
-
----
-
-## 🚀 Run Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/ayushkr80/zenith-ai-intern-work-sample.git
-cd zenith-ai-intern-work-sample
+```text
+Colour Profile
+      +
+Occasion
+      +
+Climate
+      +
+Style Direction
+      +
+Budget
+      ↓
+Recommendation Logic
+      ↓
+Personalized Outfit Direction
+      +
+Colour Palette
+      +
+Recommendation Reasons
+      ↓
+User Feedback
