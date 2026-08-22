@@ -2,47 +2,54 @@
 
 An independent fashion recommendation proof-of-concept developed as a work sample for the **Zenith / J.E.R.K. AI Internship assignment**.
 
-StylePilot demonstrates how user context such as **colour profile, occasion, climate, style direction, and budget** can be combined to generate a more relevant fashion recommendation.
+StylePilot explores how **colour profile, style direction, occasion, climate, and budget** can be combined to generate a more relevant and explainable fashion recommendation.
 
-> **Note:** This is an independent proof-of-concept. It does not reproduce, access, or claim to use proprietary Zenith/J.E.R.K. models, datasets, algorithms, or internal architecture.
+> **Note:** This is an independent proof-of-concept. It does not reproduce, access, or claim to use proprietary Zenith/J.E.R.K. models, datasets, APIs, algorithms, or internal systems.
 
 ---
 
-## 🎯 What This Project Demonstrates
+## 🎯 Project Overview
 
-- Context-aware fashion recommendations
-- Colour-profile-aware outfit palettes
-- Occasion-based styling
-- Climate-aware fabric selection
-- Budget-aware recommendation positioning
+The idea behind StylePilot is to move beyond generic fashion suggestions by considering multiple aspects of a user's context.
+
+The current prototype takes five inputs:
+
+- Colour profile
+- Style direction
+- Occasion
+- Climate
+- Approximate outfit budget
+
+These inputs are processed through a transparent recommendation layer to generate:
+
+- A recommended outfit direction
+- A suggested colour palette
+- A short explanation of the recommendation
 - Structured user feedback
-- A foundation for future personalized recommendation systems
+
+The prototype is intentionally designed as a simple, explainable baseline that can be extended into a more advanced personalization system.
 
 ---
 
 ## 🧠 Recommendation Approach
 
-The prototype uses a transparent recommendation layer that combines multiple user inputs.
-
-### User Inputs
-
 ```text
 Colour Profile
+      +
+Style Direction
       +
 Occasion
       +
 Climate
       +
-Style Direction
-      +
 Budget
       ↓
 Recommendation Logic
       ↓
-Personalized Outfit Direction
+Recommended Outfit
       +
 Colour Palette
       +
-Recommendation Reasons
+Explanation
       ↓
 User Feedback
